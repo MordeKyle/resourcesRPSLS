@@ -1,0 +1,39 @@
+﻿<Window x:Name="wpfRPSLS" x:Class="buttonRPSLS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rock Paper Scissors Lizard Spock" Height="350" Width="525" Background="#FF6377F1">
+    <Grid Background="White" Margin="0,0,0,-62">
+        <Button x:Name="rockButton" Content="Rock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="rockButton_Click" Height="75"/>
+        <Button x:Name="paperButton" Content="Paper" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,90,0,0" Click="paperButton_Click" Height="75"/>
+        <Button x:Name="scissorsButton" Content="Scissors" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,170,0,0" Click="scissorsButton_Click" Height="75"/>
+        <Button x:Name="lizardButton" Content="Lizard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,10,0,0" Click="lizardButton_Click" Height="75"/>
+        <Button x:Name="spockButton" Content="Spock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,90,0,0" Click="spockButton_Click" Height="75"/>
+        <Label Content="Wins:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="430,8,0,0"/>
+        <Label Content="Loses:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="427,39,0,0"/>
+        <Label Content="Draws:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="424,70,0,0"/>
+        <Label Content="Computer Chose:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="362,252,0,0"/>
+        <Label Content="Result:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,283,0,0"/>
+        <Label x:Name="winsLabel" Content="wins" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,8,0,0"/>
+        <Label x:Name="losesLabel" Content="loses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,39,0,0"/>
+        <Label x:Name="drawsLabel" Content="draws" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,70,0,0"/>
+        <Label x:Name="computerChoiceLabel" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,252,0,0"/>
+        <Label x:Name="resultLabel" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,283,0,0"/>
+        <Button x:Name="rockImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Height="75" Click="rockButton_Click">
+            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="65" Source="pack://siteoforigin:,,,/Resources/rock.png" GotMouseCapture="rockButton_Click" />
+        </Button>
+        <Button x:Name="paperImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,90,0,0" Height="75" Click="paperButton_Click">
+            <Image HorizontalAlignment="Center" Height="75" VerticalAlignment="Top" Width="75" Source="pack://siteoforigin:,,,/Resources/paper.png"/>
+        </Button>
+        <Button x:Name="scissorsImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,170,0,0" Height="75" Click="scissorsButton_Click">
+            <Image HorizontalAlignment="Center" Height="65" VerticalAlignment="Top" Width="67" Source="pack://siteoforigin:,,,/Resources/scissors.png"/>
+        </Button>
+        <Button x:Name="lizardImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,10,0,0" Height="75" Click="lizardButton_Click">
+            <Image HorizontalAlignment="Center" Height="75" VerticalAlignment="Center" Width="74" Source="pack://siteoforigin:,,,/Resources/lizard.png"/>
+        </Button>
+        <Button x:Name="spockImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,90,0,0" Height="75" Click="spockButton_Click">
+            <Image HorizontalAlignment="Center" Height="75" VerticalAlignment="Top" Width="75" Source="pack://siteoforigin:,,,/Resources/spock.png"/>
+        </Button>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,170,0,0" Height="75"/>
+
+    </Grid>
+</Window>
